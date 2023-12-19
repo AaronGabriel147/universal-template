@@ -1,36 +1,32 @@
-
-  
-  * {
+* {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
     max-width: 100%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-decoration: none;
     letter-spacing: .05rem;
     line-height: 1.3;
-  /*   border: 1px solid rgba(255, 255, 255, 0.199); */
-    /* margin: 2rem; */
-  }
-  
-  
-  
-  body {
+      border: 2px solid rgb(182, 181, 181);
+}
+
+
+
+body {
     margin-top: 4rem;
     min-height: 100vh;
     background-attachment: fixed;
     background-color: #cfcfcf;
     background: linear-gradient(#6600FF, #43007e);
-  
-  }
-  
-  
-  h1 {
+}
+
+
+h1 {
     font-weight: 600;
     /* font-size: 4vw; */
     font-size: 3rem;
@@ -38,54 +34,59 @@
     margin-top: 2rem;
     margin-bottom: 3rem;
     text-shadow: 2px 4px 10px black;
-  }
-  
-  
-  p {
+}
+
+
+p {
     font-size: 1.2rem;
-  }
-  
-  
-  .app {
+    padding: 50px 200px;
+
+}
+
+
+.app {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
-  }
+    width: 1400px;
+    border: 1px solid rgba(255, 255, 255, 0.199);
+    margin: 0 auto; 
+}
 
-  
-  @media screen and (max-width: 600px) {
+
+@media screen and (max-width: 600px) {
     p {
-      margin-left: 5%;
-      margin-right: 2%;
+        margin-left: 5%;
+        margin-right: 2%;
+        padding: 50px;
     }
-  
+
     h1 {
-      margin-left: 5%;
-      margin-right: 2%;
+        margin-left: 5%;
+        margin-right: 2%;
     }
-  }
+}
 
 
 
-  ::-webkit-scrollbar {
-    width: 15px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background-color: #282c34;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: #bbbbbb59;
-    border-radius: 1.7rem;
-    border: 2px solid transparent;
-    background-clip: content-box;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: #ffffff;
-  }
-  
-  
+::-webkit-scrollbar {
+width: 15px;
+}
+
+::-webkit-scrollbar-track {
+background-color: #282c34;
+}
+
+::-webkit-scrollbar-thumb {
+background-color: #bbbbbb59;
+border-radius: 1.7rem;
+border: 2px solid transparent;
+background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background-color: #ffffff;
+}
+
