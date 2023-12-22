@@ -1,11 +1,24 @@
 :root {
-    --background-1: #b8b9ba;
+    --page-width: 1100px; 
+
+    /* Theme 1 */
+    /* --background-1: #b8b9ba;
     --background-2: #646868;
     --font-color-1: #f5f5f5;
     --font-color-2: #3f3f3f;
-    --border-color: #3f3f3f;
-    --page-width: 1000px;
+    --border-color: #3f3f3f;*/
+
+    /* Theme 2 */
+    --background-1: #1a1a1d;
+    --background-2: #2f2f31;
+    --font-color-1: #F0F0F0;
+    --font-color-2: #48D1CC;
+    --border-color: #737676;
+
+    /* Theme 3 */
 }
+
+
 /* Example of how these variables look like in CSS
   background-color: var(--background-2);
   color: var(--font-color-2);
@@ -49,7 +62,7 @@ h1 {
 
 p {
     font-size: 1.2rem;
-    padding: 50px 200px;
+    padding: 50px 10%;
 }
 
 .app {
@@ -72,7 +85,6 @@ p {
     position: sticky;
     position: -webkit-sticky;
     top: 0; /* Ensure it sticks to the top */
-    
     display: grid; /* Use grid for layout */
     grid-template-rows: auto; /* Define a single row */
     grid-template-columns: 1fr auto; /* 1fr for flexible content, auto for centering */
@@ -94,12 +106,12 @@ nav ul {
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  justify-content: flex-end;
+  justify-content: flex-start;
   /* margin-left: auto; */
 }
 
 nav li {
-  text-align: right;
+  text-align: left;
 }
 
 .sticky-header nav {
