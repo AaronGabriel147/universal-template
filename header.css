@@ -14,52 +14,21 @@
 }
 
 
-/* Target the nav element for max-width */
-.sticky-header nav {
-    margin: 0 auto; /* Center the links within the header */
-    /* border: 2px solid hotpink; */
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-}
-
-
-nav ul {
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  justify-content: flex-start;
-  /* margin-left: auto; */
-}
-
-nav li {
-  text-align: left;
-}
 
 .sticky-header nav {
-  /* Existing styles maintained */
   max-width: var(--page-width);
   margin: 0 auto;
-  /* border: 2px solid hotpink; */
-  /* Added: Grid layout with dedicated columns for logo and links, vertical centering */
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
 }
 
-.sticky-header nav ul {
-  /* Existing styles maintained */
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  justify-content: flex-end;
-  /* Added: Push links to the right side to make space for the logo */
-  /* margin-left: auto; */
-}
 
-.sticky-header nav li {
-  /* Existing styles maintained */
-  text-align: right;
+.header-link-container {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 3rem;
 }
 
 .logo {
