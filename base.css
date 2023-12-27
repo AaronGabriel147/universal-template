@@ -2,11 +2,11 @@
     --page-width: 1400px; 
 
     /* Theme 1 */
-    /* --background-1: #b8b9ba;
-    --background-2: #646868;
-    --font-color-1: #f5f5f5;
-    --font-color-2: #3f3f3f;
-    --border-color: #3f3f3f; */
+    /* --background-1: #f6f8fa;
+    --background-2: #88e4e4;
+    --font-color-1: #151515;
+    --font-color-2: #141414;
+    --border-color: #282f30; */
 
     /* Theme 2 */
     --background-1: #1a1a22;
@@ -51,6 +51,27 @@ body {
     /* background: linear-gradient(#6600FF, #43007e); */
 }
 
+/* Scroll bar styling */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #282c34;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #bbbbbb59;
+    border-radius: 1.7rem;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ffffff;
+}
+
+
 h1 {
     font-size: 3rem;
     /* font-size: 4vw; */
@@ -87,10 +108,11 @@ button {
     /* background: radial-gradient(circle at 3% 7.4%, rgb(0, 144, 243) 0%, rgb(0, 86, 240) 90%); */
     /* box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.653), 0 4px 6px -4px rgb(0 0 0 / 0.1); */
     letter-spacing: 1px;
+    transition: color 0.3s ease, background 0.3s ease;
 }
 
 button:hover {
-    background: rgb(73, 161, 161);
+    background: white;
 }
   
 .background-1 {
@@ -123,13 +145,17 @@ button:hover {
 a {
   text-decoration: none;
   font-size: 1.2rem;
-  color: var(--font-color-2)
+  color: var(--font-color-2);
+  transition: color 0.3s ease; /* Add a smooth transition effect */
+}
+
+a:hover {
+    color: white;
 }
 
 
 
-
-
+/* Footer CSS */
 .site-footer {
     background-color: var(--background-2);
     color: var(--font-color-1);
@@ -139,49 +165,44 @@ a {
     padding-top: 1rem;
     padding-bottom: 1rem;
     border-top: 1px solid var(--border-color);
-    /* border: 2px solid red; */
-    /* line-height: 2; */
 }
 
 
-/* @@@@@@@@@@@@@@@@@@@@@@ */
-/* @ Breakpoints below @@ */
-/* @@@@@@@@@@@@@@@@@@@@@@ */
 
 
-/* Breakpoints below */
 
-@media screen and (max-width: 600px) {
-    p {
-        margin-left: 5%;
-        margin-right: 2%;
-        padding: 50px;
-    }
-
-    h1 {
-        margin-left: 5%;
-        margin-right: 2%;
-    }
+/* Image text and overlay section */
+.cover-section {
+    position: relative;
+    height: 500px; /* Default height, adjust as needed */
+    overflow: hidden;
 }
 
-
-/* Scroll bar styling */
-::-webkit-scrollbar {
-    width: 15px;
+.cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    object-position: center; /* Center the visible part of the image */
 }
 
-::-webkit-scrollbar-track {
-    background-color: #282c34;
+.cover-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: 1;
 }
 
-::-webkit-scrollbar-thumb {
-    background-color: #bbbbbb59;
-    border-radius: 1.7rem;
-    border: 2px solid transparent;
-    background-clip: content-box;
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    z-index: 2;
 }
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: #ffffff;
-}
-
