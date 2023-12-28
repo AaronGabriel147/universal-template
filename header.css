@@ -18,9 +18,11 @@
 .sticky-header nav {
   max-width: var(--page-width);
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: auto 1fr;
+  /* display: grid;
+  grid-template-columns: auto 1fr; */
+  display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 
@@ -29,15 +31,40 @@
   display: flex;
   justify-content: flex-end;
   gap: 3rem;
+  padding-right: 30px;
 }
 
 .logo {
   /* Added: Flexbox layout for vertical centering of logo content */
   display: flex;
   align-items: center;
+  padding-left: 30px;
 }
 
 .logo img {
   height: 70px;
 }
 
+
+@media screen and (max-width: 750px) {
+  /* Your styles for screens below 750px go here */
+  .header-link-container {
+    display: none;
+  }
+
+  .header-mobile-logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo {
+    padding-left: 0;
+  }
+
+  .sticky-header nav {
+    justify-content: center;
+  }
+
+
+
+}
