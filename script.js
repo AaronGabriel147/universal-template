@@ -5,7 +5,7 @@ let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
   if (currentScroll > lastScrollTop) {
     // Scrolling down
-    document.querySelector(".sticky-header").style.top = "-80px";           // Adjust the value as needed
+    document.querySelector(".sticky-header").style.top = "-90px";           // Adjust the value as needed
   } else {
     // Scrolling up
     document.querySelector(".sticky-header").style.top = "0";

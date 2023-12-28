@@ -12,9 +12,9 @@
     --background-1: #1a1a22;
     --background-2: #42424f;
     --font-color-1: #F0F0F0;
-    --font-color-2: #48D1CC;
+    --font-color-2: #04cdff;
     --border-color: #aedbdb;
-    --button-color: #48D1CC;
+    --button-color: #00aeff;
 
 
     /* Theme 3 */
@@ -156,15 +156,21 @@ a:hover {
 
 
 /* Footer CSS */
-.site-footer {
+.footer-out-wrapper {
     background-color: var(--background-2);
     color: var(--font-color-1);
+    /* text-align: center; */
+    width: 100%;
+    /* bottom: 0; */
+    padding-top: 3rem;
+    /* padding-bottom: 1rem; */
+    border-top: 1px solid var(--border-color);
+}
+
+.footer-inner-wrapper {
+    background-color: var(--background-2);
     text-align: center;
     width: 100%;
-    bottom: 0;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    border-top: 1px solid var(--border-color);
 }
 
 
