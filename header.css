@@ -78,6 +78,7 @@
     display: block;
     cursor: pointer;
     margin-left: auto;
+    padding: 10px;
   }
   
   .bar1, .bar2, .bar3 {
