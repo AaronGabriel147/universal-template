@@ -11,6 +11,7 @@
     grid-template-rows: auto; /* Define a single row */
     grid-template-columns: 1fr auto; /* 1fr for flexible content, auto for centering */
     align-items: center;
+    z-index: 1000;
 }
 
 
