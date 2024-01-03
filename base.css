@@ -91,8 +91,9 @@ p {
     padding: 50px 10%;
     color: var(--font-color-1);
 }
-
-button {
+    /* background: radial-gradient(circle at 3% 7.4%, rgb(0, 144, 243) 0%, rgb(0, 86, 240) 90%); */
+    /* box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.653), 0 4px 6px -4px rgb(0 0 0 / 0.1); */
+/* button {
     font-weight: 600;
     min-width: 7rem;
     padding: .5rem 1.1rem;
@@ -100,21 +101,18 @@ button {
     font-size: 15px;
     text-transform: uppercase;
     cursor: pointer;
-    /* color: white; */
     color: var(--background-2);
     outline: none;
     border-radius: .2rem;
     background: var(--button-color);
-    /* background: radial-gradient(circle at 3% 7.4%, rgb(0, 144, 243) 0%, rgb(0, 86, 240) 90%); */
-    /* box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.653), 0 4px 6px -4px rgb(0 0 0 / 0.1); */
     letter-spacing: 1px;
     transition: color 0.3s ease, background 0.3s ease;
-}
+} */
 
-button:hover {
+/* button:hover {
     background: white;
 }
-  
+   */
 .background-1 {
     background-color: var(--background-1);
 }
@@ -237,3 +235,107 @@ a:hover {
         min-width: 300px;
     }
 }
+
+
+
+
+
+/* BUTTON................... */
+button {
+ position: relative;
+ border: none;
+ background: transparent;
+ padding: 0;
+ cursor: pointer;
+ outline-offset: 4px;
+ transition: filter 250ms;
+ user-select: none;
+ touch-action: manipulation;
+}
+
+.shadow {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ border-radius: 12px;
+ background: hsl(0deg 0% 0% / 0.25);
+ will-change: transform;
+ transform: translateY(2px);
+ transition: transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.edge {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ border-radius: 12px;
+ background: linear-gradient(
+    to left,
+    hsl(189, 100%, 39%) 0%,
+    hsl(193, 93%, 33%) 8%,
+    hsl(214, 94%, 51%) 92%,
+    hsl(216, 89%, 24%) 100%
+  );
+}
+
+.front {
+ display: block;
+ position: relative;
+ padding: 12px 27px;
+ border-radius: 12px;
+ font-size: 1.2rem;
+ /* color: white; */
+ font-weight: 600;
+ background: #04cdff;
+ will-change: transform;
+ transform: translateY(-4px);
+ transition: transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+color:#1a1a22;
+}
+
+.front::after {
+    content: " \2192"; /* Unicode for right arrow */
+    display: inline-block;
+    margin-left: 10px; /* Adjust as needed */
+    font-size: 1.3rem;
+  }
+
+button:hover {
+ filter: brightness(110%);
+}
+
+button:hover .front {
+ transform: translateY(-6px);
+ transition: transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+button:active .front {
+ transform: translateY(-2px);
+ transition: transform 34ms;
+}
+
+button:hover .shadow {
+ transform: translateY(4px);
+ transition: transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+button:active .shadow {
+ transform: translateY(1px);
+ transition: transform 34ms;
+}
+
+button:focus:not(:focus-visible) {
+ outline: none;
+} 
