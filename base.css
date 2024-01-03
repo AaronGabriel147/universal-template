@@ -298,7 +298,7 @@ button {
     transition: transform
         600ms
         cubic-bezier(.3, .7, .4, 1);
-    color:#1a1a22;
+    color:#121218;
     outline: none;
 }
 
