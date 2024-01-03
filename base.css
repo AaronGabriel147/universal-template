@@ -285,20 +285,21 @@ button {
 }
 
 .front {
- display: block;
- position: relative;
- padding: 12px 27px;
- border-radius: 12px;
- font-size: 1.2rem;
- /* color: white; */
- font-weight: 600;
- background: #04cdff;
- will-change: transform;
- transform: translateY(-4px);
- transition: transform
-    600ms
-    cubic-bezier(.3, .7, .4, 1);
-color:#1a1a22;
+    display: block;
+    position: relative;
+    padding: 12px 27px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    /* color: white; */
+    font-weight: 600;
+    background: #04cdff;
+    will-change: transform;
+    transform: translateY(-4px);
+    transition: transform
+        600ms
+        cubic-bezier(.3, .7, .4, 1);
+    color:#1a1a22;
+    outline: none;
 }
 
 .front::after {
