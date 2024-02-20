@@ -171,6 +171,14 @@ a:hover {
     width: 100%;
 }
 
+.footer-links {
+    line-height: 1.5;
+    padding: 4px;
+}
+
+/* END Footer CSS */
+
+
 
 
 
@@ -340,3 +348,47 @@ button:active .shadow {
 button:focus:not(:focus-visible) {
  outline: none;
 } 
+
+
+
+
+
+
+/* Image gallery */
+.image-gallery-header {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.image-item {
+    flex-basis: calc(33.333% - 10px); /* Adjust basis for 3 columns, subtracting the gap */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 900px) {
+    .image-item {
+        flex-basis: 100%; /* Full width for single column layout */
+    }
+}
+
+@media (min-width: 1400px) {
+    .image-gallery {
+        padding: 100px;
+        gap: 15px;
+    }
+}
+/* END image gallery */
