@@ -152,10 +152,9 @@ a:hover {
 }
 
 
-
 /* Footer CSS */
 .footer-out-wrapper {
-    background-color: var(--background-2);
+    background-color: var(--background-1);
     color: var(--font-color-1);
     /* text-align: center; */
     width: 100%;
@@ -166,7 +165,7 @@ a:hover {
 }
 
 .footer-inner-wrapper {
-    background-color: var(--background-2);
+    background-color: var(--background-1);
     text-align: center;
     width: 100%;
 }
